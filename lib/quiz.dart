@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/screens/questions_screen.dart';
-import 'package:quiz_app/screens/start_screen.dart';
+import 'package:quiz_app/questions_screen.dart';
+import 'package:quiz_app/start_screen.dart';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
@@ -25,7 +25,7 @@ class _QuizState extends State<Quiz> {
     Widget screenWidget = StartScreen(switchScreen);
     //If approch for chnge the state conditionaly
     if (activeScreen == 'question-screen') {
-      screenWidget = QuestionsScreen();
+      screenWidget = const QuestionsScreen();
     }
 
     //Ternery approch
