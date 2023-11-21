@@ -4,7 +4,7 @@ const questions = [
   QuizQuestion(
     'What are the main building block of flutter UIs',
     [
-      'Widgets',
+      'Wid gets',
       'Components',
       'Blocks',
       'Functions',
