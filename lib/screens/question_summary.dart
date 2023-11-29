@@ -16,16 +16,36 @@ class QuestionsSummary extends StatelessWidget {
             (data) {
               return Row(
                 children: [
-                  Text(((data['question_index'] as int) + 1).toString()),
+                  Text(
+                      style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white),
+                      ((data['question_index'] as int) + 1).toString()),
                   Expanded(
                     child: Column(
                       children: [
-                        Text(data['question'] as String),
+                        Text(
+                            style: const TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.white),
+                            data['question'] as String),
                         const SizedBox(
                           height: 5,
                         ),
-                        Text(data['user_answer'] as String),
-                        Text(data['correct_answer'] as String),
+                        Text(
+                            style: const TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.white),
+                            data['user_answer'] as String),
+                        Text(
+                            style: const TextStyle(
+                                color: Colors.green,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18),
+                            data['correct_answer'] as String),
                       ],
                     ),
                   ),
